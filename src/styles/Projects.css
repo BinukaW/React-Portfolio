@@ -1,0 +1,56 @@
+.Work h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    font-variant:small-caps;
+}
+.project-container{
+    margin:5% 15%;
+}
+.project-container h2{
+    text-align: right;
+}
+.project-card{
+    box-sizing: border-box;
+    background: linear-gradient(
+        70deg,
+        rgb(182, 220, 221) 0%,
+        rgb(140, 184, 201) 21%,
+        rgb(150, 143, 187) 67%,
+        rgb(178, 128, 189) 100%
+      );
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 50px 0;
+    padding:10px;
+}
+
+.project-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px 10px 10px 20px;
+    float: left;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.project-card p{
+    background-color: transparent;
+    font-size: 20px;
+    float: right;
+    text-align: right;   
+    max-width: 45%;
+    margin:20px 0 0;
+}
+.project-card a{
+    background-color: transparent;
+    text-decoration-line: underline;
+    color:rgb(209, 228, 41);
+}
+.project-card h6 {
+    background-color: transparent;
+    color:darkslategray;
+    float: right;
+    font-size:large;
+    margin:20px 0 0 30px;
+}

@@ -1,38 +1,376 @@
-.App {
+/* general styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans&family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+:root {
+  --sans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --zilla: "Zilla Slab",serif;
+}
+body {
+  font-family: var(--poppins);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+
+
+}
+
+.container {
+  padding: 5% 10%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: var(--sans);
+  font-size: 3rem;
+}
+.text-center {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: var(--sans);
+  font-size: 2rem;
+}
+.wrapper{
+  margin: 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav bar */
+
+
+nav {
+
+  background-image: url('./components/assets/dusk.jpg');
+}
+nav ul {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  border-bottom: white 2px solid;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-family: var(--poppins);
+  font-weight: bold;
+}
+
+nav li {
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: white;
+}
+.my-name {
+  font-family: var(--poppins);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0rem;
+  padding-left:1rem;
+  
+}
+
+#aboutSect {
+  min-height: calc(100vh - 60px);
+}
+
+#about {
+  padding-bottom: 50px;
+  
+}
+
+#about p {
+  line-height: 2;
+}
+.main {
+   margin: 0rem;
+  padding: 20px 30px 30px 30px;
+}
+
+.main h2 {
+  color: white;
+  text-align: center;
+}
+
+.skills {
+  font-size: 1rem;
+  font-family: var(--sans);
+  line-height: 3;
+  display: inline-block;
+  margin-left: 8%;
+  margin-right: 5%;
+  max-width: 50%;
+  text-align: left;
+  color:white;
+}
+
+
+.skills p {
+  margin: 0;
+}
+.me-pic {
+
+  width: auto;
+  margin-bottom: 40px;
+  margin-left:4rem;
+  border-radius: 10px;
+  vertical-align: top;
+
+}
+
+.work {
+  font-size: 1.5rem;
+  font-family: var(--sans);
+ 
+
+}
+.work-title{
+  color: white;
+}
+.work-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 6rem;
+  color: black;
+}
+
+.work-items img {
+  margin-bottom: 0.2rem;
+
+  height: auto;
+}
+
+.project {
+  padding: 1rem;
+  background-color: rgb(238, 236, 236);
+  margin-bottom: 1rem;
+  
+  width: 50%;
+  height: 70%;
+
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
+}
+
+.project img {
+  width: 100%;
+  height: 40%;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
+}
+
+.tech-used {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: rgb(64, 25, 70);
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 15px 10px 0 0;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-image: url('./assets/images/mochaGrunge.png');
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.copy p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--poppins);
+  padding: 2rem;
+  padding-bottom: 0rem;
+  margin:0rem;
+  border-top: 2px white solid;
+
+
+}
+
+.fa {
+  font-size: 2rem;
+  border-radius: 5%;
+  padding: 1rem;
+  width: 4rem;
+  margin:2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-decoration: none;
+}
+.fa-linkedin,
+.fa-github,
+.fa-envelope
+{
+  background: #007bb5;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fa:hover {
+  color: salmon;
+}
+.social-links{
+  margin-left: 27rem;
+  margin-top: 0rem;
+  }
+
+.contactBtn {
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid rgb(135, 206, 250);
+  background-color: black;
+  color: white;
+  padding: 0px 20px;
+  margin-left: 4rem;
+  margin-bottom:4rem;
+}
+.contact-form {
+  margin-left: 4rem;
+  padding-top: 0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#contact {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+.contact {
+  font-size: 50px;
+color:white;
+}
+.form-group{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  color:white;
+  padding: 1rem;
+}
+.form-control{
+  width: 50%;
+  height: 2vw;
+  border-radius: 5px;
+  
+}
+
+.bioText li {
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 1.5rem;
+  color: white;
+ 
+}
+.bioText h4{
+    font-size: 2rem;
+    margin-left:1rem;
+    color: white;
+}
+
+.download{
+  color: white;
+  font-size: 1.5rem;
+ font-weight: bold;
+
+ padding-top: 4rem;
+ margin-left:1rem;
+}
+.fa-download{
+  background: #007bb5;
+  color: white;
+ position:absolute;
+ top: 10rem;
+  left:20rem;
+  font-size: 2rem;
+  border-radius: 5%;
+  padding: 1rem;
+  width: 4rem;
+  
+  align-items: center;
+  text-decoration: none;
+}
+.content{
+  margin: 0rem;
+}
+@media screen and (max-width: 880px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
   }
-  to {
-    transform: rotate(360deg);
+  nav li {
+    padding: 1rem;
   }
+}
+@media screen and (max-width: 616px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav li {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  html {
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding: 1rem;
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 10rem;
+  }
+
+  .project img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    padding: 1rem;
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 10rem;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
 }
